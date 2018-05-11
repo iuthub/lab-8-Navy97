@@ -61,7 +61,7 @@ Route::group(['prefix' => 'admin'], function() {
         'uses'=>"PostController@tagAdminEdit", 
         'as'=>"admin.tag.edit"
     ]);
-    Route::post("tag/update/{id}", [
+    Route::post("tag/update/{id}", [    
         'uses'=>"PostController@tagAdminUpdate",
         'as'=>'admin.tag.update'
     ]);
